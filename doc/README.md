@@ -13,6 +13,16 @@ GatorCAT provides the following:
 
 GatorCAT targets zig master for now. We plan to stop targetting master once 0.14.0 is released.
 
+for fresh installs on pi
+sudo apt update
+sudo apt install snapd
+sudo snap install core
+# Install Zig nightly using snap
+sudo snap install zig --classic --edge
+echo 'export PATH=$PATH:/snap/bin' >> ~/.bashrc
+source ~/.bashrc
+zig version
+
 ## GatorCAT CLI
 
 ### Installation
